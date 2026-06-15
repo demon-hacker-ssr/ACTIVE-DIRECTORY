@@ -1,1 +1,61 @@
+NTDS = New Technology Directory services 
+DIT = directory information tree
+It is active directory database system which stores active directory information. 
+NTDS.DIT is the main file of the active directory.
+It stores users account,  computer accounts, security groups, passwords related data (hashes only), domain configuration,  directory objects.
+It stored on the Domain controller.
+
+ex. suppose a compnay where active directory perform as employee management while ntds.dit is the mastercard database of that company.
+
+
+
+NTDS.DIT DUMPING : 
+It is a process or attack in active directory in which an attacker extract all the information from the Active Directory Database. 
+Extract information like credentials based and domain related information from AD Database.
+Extraction based attack.
+
+
+Why this is important : stores all credntials or domain related information. (ek important file jo attacker lena chahta hai active directoy attacke me domain controller se)
+
+
+Attack methdology : 
+Attacker targets domain controller becasue this file stored on the domain controller. so attacker or user have to much privileges to contact or query the DC.
+1. Attacker have Initial Access on any system in a network through :
+    a. Phishing
+    b. Stolen Credntilas.
+    c. Misconfiguration
+    d. Vulnerability Exploitation
+
+2. Attacker esclates his privileges same to DC (Domain Controller) (attacker try to gain higher privileges on system to query DC or become some of following :
+Goal of privileges : 🎯
+    a. Local Administrator
+    b. Domain Admin
+    c. Equivalent privilege Account
+
+3. Attacker find Activee Directory info like :
+    a. Domain Controller
+    b. Users
+    c. Groups
+    d. Trust relationships
+
+4. Attacker try to equivalent (same) privileges to DC because ntds.dit stored here.
+5. Domain Controller Access and dump the file or hashes.
+6. Privilege Escalation through Credentials dump by accessing the AD database.
+    a. Additional systems access kar sakta hai.
+    b. New accounts compromise kar sakta hai.
+    c. Domain-wide movement kar sakta hai.
+
+
+🛡️ Blue team (Defensive Prespective) : 
+blue teamers can see these suspicious sign or anlayze this  :
+    a. Unusual Domain Controller access
+    b. Sensitive file access
+    c. Backup misuse
+    d. Privileged account activity
+    e. Credential harvesting behavior
+
+
+
+
+
 
