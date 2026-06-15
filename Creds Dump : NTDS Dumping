@@ -1,4 +1,4 @@
-NTDS = New Technology Directory services 
+NTDS = New Technology Directory services.
 DIT = directory information tree
 It is active directory database system which stores active directory information. 
 NTDS.DIT is the main file of the active directory.
