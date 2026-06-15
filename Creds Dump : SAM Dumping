@@ -1,1 +1,40 @@
+SAM = Security Account Manager 
+It is  a windows's database. it stores all local information of windows such as :
+    a. Local Users
+    b. local Groups
+    c. Account Settings
+    d. Passswords related information. (Hashes)
+Sam file is system protected in a system and a normal user can be able to access. 
+
+Local Accounts  : local accounts means created by humans or user.
+user : Sandeep Singh Rajput, securepentest, demon hacker etc. 
+
+
+
+---------------------------------------------------------------------------------------------
+SAM DUMPING : Sam dumping is also a credentials dimping process or attack. 
+Sam Dumping is an attack in which an attacker try to extract or steal the credentials of a local windows user/account information from the windows environemnt. 
+Goal : 
+    Extract the hashes from local windows account.
+    Extract local account information from local windows account.
+
+Attack Methodology :
+1. Attacker have a initial access on a system in an environment through :
+    a. Phishing (SET)
+    b. Stolen Credentials
+    c. Malware
+    d. Vulnerability exploitation  
+
+2. Attacker tries to escalatee privileges : 
+because SAM is a protected and highly sensitive file, it only accessible by administratives users.. For this atttacker tries :
+    a.   to gain/obtain Administrativee privileges.
+    b. or same as elevated or administrative account.
+
+
+
+
+
+
+
+
 
