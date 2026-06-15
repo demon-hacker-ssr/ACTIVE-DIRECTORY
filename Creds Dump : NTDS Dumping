@@ -8,7 +8,6 @@ It stored on the Domain controller.
 ex. suppose a compnay where active directory perform as employee management while ntds.dit is the mastercard database of that company.
 
 
-
 NTDS.DIT DUMPING : 
 It is a process or attack in active directory in which an attacker extract all the information from the Active Directory Database. 
 Extract information like credentials based and domain related information from AD Database.
